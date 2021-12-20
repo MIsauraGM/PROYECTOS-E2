@@ -8,12 +8,47 @@
   <style>
     #container {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      border: 2px solid black;
+      padding: 20px;
+    }
+
+    .header {
+      border-right: 4px solid coral;
+      margin-right: 10px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      margin-right: 20px;
+      width: 4em;
+    }
+
+    .body {
+      display: flex;
+      justify-content: center;
+    }
+
+    .body > a {
+      margin-right: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #336699;
+      font-size: 0.7em;
     }
 
     img {
       height: 100px;
+      width: 100px;
     }
 
     .tailwind {
@@ -22,174 +57,266 @@
   </style>
 </head>
 <body>
+  <h1>PORTAFOLIOS (Entregas 1 y 2)</h1>
   <div id="container">
     <div class="item">
-      <h2>Mario Chulián</h2>
-      <a href="ChulianMario.pdf">
-        <img src="img/figma.png">
-      </a>
-      <a href="ChulianMario/index.html">
-        <img src="img/ChulianMario.png">
-      </a>
-      <a href="ChulianMarioT/index.html">
-        <img src="img/tailwind.png">
-      </a>
+      <div class="header">
+        <h2>Mario Chulián</h2>
+      </div>
+      <div class="body"> 
+        <a href="ChulianMario.pdf">
+          <img src="img/figma.png">
+          Guía de estilos
+        </a>
+        <a href="ChulianMario/index.html">
+          <img src="img/ChulianMario.png">
+          Web
+        </a>
+        <a href="ChulianMarioT/index.html">
+          <img src="img/tailwind.png">
+          Web + Tailwind
+        </a>
+      </div>
     </div>
 
     <div class="item">
-      <h2>Sergio Chulián</h2>
-      <a href="ChulianSergio.pdf">
-        <img src="img/figma.png">
-      </a>      
-      <a href="ChulianSergio/index.html">
-        <img src="img/ChulianSergio.png">
-      </a>
-      <a href="ChulianSergioT/">
-        <img src="img/tailwind.png">
-      </a>
+      <div class="header">
+        <h2>Sergio Chulián</h2>
+      </div>
+      <div class="body"> 
+        <a href="ChulianSergio.pdf">
+          <img src="img/figma.png">
+          Guía de estilos
+        </a>      
+        <a href="ChulianSergio/index.html">
+          <img src="img/ChulianSergio.png">
+          Web
+        </a>
+        <a href="ChulianSergioT/">
+          <img src="img/tailwind.png">
+          Web + Tailwind
+        </a>
+      </div>
     </div>
 
     <div class="item">
-      <h2>Jesús M. Espinar</h2>
-      <a href="EspinarJesusM.pdf">
-        <img src="img/figma.png">
-      </a> 
-      <a href="EspinarJesusM/index.html">
-        <img src="img/EspinarJesusM.png">
-      </a>
-      <a href="EspinarJesusMT/">
-        <img src="img/tailwind.png">
-      </a>
+      <div class="header">
+        <h2>Jesús M. Espinar</h2>
+      </div>
+      <div class="body"> 
+        <a href="EspinarJesusM.pdf">
+          <img src="img/figma.png">
+          Guía de estilos
+        </a> 
+        <a href="EspinarJesusM/index.html">
+          <img src="img/EspinarJesusM.png">
+          Web
+        </a>
+        <a href="EspinarJesusMT/">
+          <img src="img/tailwind.png">
+          Web + Tailwind
+        </a>
+      </div>
     </div>
 
     <div class="item">
-      <h2>José M. Gallardo</h2>
-      <a href="GallardoJoseM.pdf">
-        <img src="img/figma.png">
-      </a> 
-      <a href="GallardoJoseM/index.html">
-        <img src="img/GallardoJoseM.png">
-      </a>
-      <a href="GallardoJoseMT/index.html">
-        <img src="img/tailwind.png">
-      </a>
+      <div class="header">
+        <h2>José M. Gallardo</h2>
+      </div>
+      <div class="body"> 
+        <a href="GallardoJoseM.pdf">
+          <img src="img/figma.png">
+          Guía de estilos
+        </a> 
+        <a href="GallardoJoseM/index.html">
+          <img src="img/GallardoJoséM.png">
+          Web
+        </a>
+        <a href="GallardoJoseMT/index.html">
+          <img src="img/tailwind.png">
+          Web + Tailwind
+        </a>
+      </div>
     </div>
 
     <div class="item">
-      <h2>Daniel Gallego</h2>
-      <a href="GallegoDaniel.pdf">
-        <img src="img/figma.png">
-      </a> 
-      <a href="GallegoDaniel/index.html">
-        <img src="img/GallegoDaniel.png">
-      </a>
-      <a href="GallegoDanielT/index.html">
-        <img src="img/tailwind.png">
-      </a>
+      <div class="header">
+        <h2>Daniel Gallego</h2>
+      </div>
+      <div class="body"> 
+        <a href="GallegoDaniel.pdf">
+          <img src="img/figma.png">
+          Guía de estilos
+        </a> 
+        <a href="GallegoDaniel/index.html">
+          <img src="img/GallegoDaniel.png">
+          Web
+        </a>
+        <a href="GallegoDanielT/index.html">
+          <img src="img/tailwind.png">
+          Web + Tailwind
+        </a>
+      </div>
     </div>
 
     <div class="item">
-      <h2>Daniel González</h2>
-      <a href="GonzalezDaniel.pdf">
-        <img src="img/figma.png">
-      </a> 
-      <a href="GonzalezDaniel/index.html">
-        <img src="img/GonzalezDaniel.png">
-      </a>
-      <a href="GonzalezDanielT/">
-        <img src="img/tailwind.png">
-      </a>
+      <div class="header">
+        <h2>Daniel González</h2>
+      </div>
+      <div class="body"> 
+        <a href="GonzalezDaniel.pdf">
+          <img src="img/figma.png">
+          Guía de estilos
+        </a> 
+        <a href="GonzalezDaniel/index.html">
+          <img src="img/GonzalezDaniel.png">
+          Web
+        </a>
+        <a href="GonzalezDanielT/">
+          <img src="img/tailwind.png">
+          Web + Tailwind
+        </a>
+      </div>
     </div>
 
     <div class="item">
-      <h2>Juan Diego Jurado</h2>
-      <a href="JuradoJuanD.pdf">
-        <img src="img/figma.png">
-      </a> 
-      <a href="JuradoJuanD/index.html">
-        <img src="img/JuradoPimentel.png">
-      </a>
-      <a href="JuradoJuanDT/">
-        <img src="img/tailwind.png">
-      </a>
+      <div class="header">
+        <h2>Juan Diego Jurado</h2>
+      </div>
+      <div class="body"> 
+        <a href="JuradoJuanD.pdf">
+          <img src="img/figma.png">
+          Guía de estilos
+        </a> 
+        <a href="JuradoJuanD/index.html">
+          <img src="img/JuradoPimentel.png">
+          Web
+        </a>
+        <a href="JuradoJuanDT/">
+          <img src="img/tailwind.png">
+          Web + Tailwind
+        </a>
+      </div>
     </div>
 
     <div class="item">
-      <h2>Pablo Leal</h2>
-      <a href="LealPablo.pdf">
-        <img src="img/figma.png">
-      </a> 
-      <a href="LealPablo/index.html">
-        <img src="img/LealPablo.png">
-      </a>
-      <a href="LealPabloT/">
-        <img src="img/tailwind.png">
-      </a>
+      <div class="header">
+        <h2>Pablo Leal</h2>
+      </div>
+      <div class="body"> 
+        <a href="LealPablo.pdf">
+          <img src="img/figma.png">
+          Guía de estilos
+        </a> 
+        <a href="LealPablo/index.html">
+          <img src="img/LealPablo.png">
+          Web
+        </a>
+        <a href="LealPabloT/">
+          <img src="img/tailwind.png">
+          Web + Tailwind
+        </a>
+      </div>
     </div>
 
     <div class="item">
-      <h2>Eduardo Martínez</h2>
-      <a href="MartinezEduardo.pdf">
-        <img src="img/figma.png">
-      </a> 
-      <a href="MartinezEduardo/index.html">
-        <img src="img/MartinezEduardo.png">
-      </a>
-      <a href="MartinezEduardoT/">
-        <img src="img/tailwind.png">
-      </a>
+      <div class="header">
+        <h2>Eduardo Martínez</h2>
+      </div>
+      <div class="body"> 
+        <a href="MartinezEduardo.pdf">
+          <img src="img/figma.png">
+          Guía de estilos
+        </a> 
+        <a href="MartinezEduardo/index.html">
+          <img src="img/MartinezEduardo.png">
+          Web
+        </a>
+        <a href="MartinezEduardoT/">
+          <img src="img/tailwind.png">
+          Web + Tailwind
+        </a>
+      </div>
     </div>
 
     <div class="item">
-      <h2>Agustín Pedrote</h2>
-      <a href="PedroteAgustin.pdf">
-        <img src="img/figma.png">
-      </a> 
-      <a href="PedroteAgustin/index.html">
-        <img src="img/PedroteAgustín.png">
-      </a>
-      <a href="PedroteAgustinT/">
-        <img src="img/tailwind.png">
-      </a>
+      <div class="header">      
+        <h2>Agustín Pedrote</h2>
+      </div>
+      <div class="body"> 
+        <a href="PedroteAgustin.pdf">
+          <img src="img/figma.png">
+          Guía de estilos
+        </a> 
+        <a href="PedroteAgustin/index.html">
+          <img src="img/PedroteAgustín.png">
+          Web
+        </a>
+        <a href="PedroteAgustinT/">
+          <img src="img/tailwind.png">
+          Web + Tailwind
+        </a>
+      </div>
     </div>
 
     <div class="item">
-      <h2>María Quirós</h2>
-      <a href="QuirosMaria.pdf">
-        <img src="img/figma.png">
-      </a> 
-      <a href="QuirosMaria/index.html">
-        <img src="img/QuirosMaría.png">
-      </a>
-      <a href="QuirosMariaT/">
-        <img src="img/tailwind.png">
-      </a>
+      <div class="header">
+        <h2>María Quirós</h2>
+      </div>
+      <div class="body"> 
+        <a href="QuirosMaria.pdf">
+          <img src="img/figma.png">
+          Guía de estilos
+        </a> 
+        <a href="QuirosMaria/index.html">
+          <img src="img/QuirosMaría.png">
+          Web
+        </a>
+        <a href="QuirosMariaT/">
+          <img src="img/tailwind.png">
+          Web + Tailwind
+        </a>
+      </div>
     </div>
    
     <div class="item">
-      <h2>Antonio Román</h2>
-      <a href="RomanAntonio.pdf">
-        <img src="img/figma.png">
-      </a> 
-      <a href="RomanAntonio/index.html">
-        <img src="img/RomanAntonio.png">
-      </a>
-      <a href="RomanAntonioT/">
-        <img src="img/tailwind.png">
-      </a>
+      <div class="header">
+        <h2>Antonio Román</h2>
+      </div>
+      <div class="body"> 
+        <a href="RomanAntonio.pdf">
+          <img src="img/figma.png">
+          Guía de estilos
+        </a> 
+        <a href="RomanAntonio/index.html">
+          <img src="img/RomanAntonio.png">
+          Web
+        </a>
+        <a href="RomanAntonioT/">
+          <img src="img/tailwind.png">
+          Web + Tailwind
+        </a>
+      </div>
     </div> 
        
     <div class="item">
-      <h2>Ricardo Romero</h2>
-      <a href="RomeroRicardo.pdf">
-        <img src="img/figma.png">
-      </a> 
-      <a href="RomeroRicardo/index.html">
-        <img src="img/RomeroRicardo.png">
-      </a>
-      <a href="RomeroRicardoT/">
-        <img src="img/tailwind.png">
-      </a>
+      <div class="header">
+        <h2>Ricardo Romero</h2>
+      </div>
+      <div class="body"> 
+        <a href="RomeroRicardo.pdf">
+          <img src="img/figma.png">
+          Guía de estilos
+        </a> 
+        <a href="RomeroRicardo/index.html">
+          <img src="img/RomeroRicardo.png">
+          Web
+        </a>
+        <a href="RomeroRicardoT/">
+          <img src="img/tailwind.png">
+          Web + Tailwind
+        </a>
+      </div>
     </div> 
     
   </div>
