@@ -1,0 +1,204 @@
+/*  */
+@import url("sobre-mi.css");
+@import url("contacto.css");
+@import url("curriculum.css");
+@import url("mis-proyectos.css");
+@import url("redes-sociales.css");
+@import url("testimonios.css");
+
+/* fuentes */
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "lora";
+  src: url("../font/lora/Lora-Regular.ttf");
+}
+
+
+
+/* reseteo página */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  /* display: block; */
+
+  font-family: lora;
+}
+/* body */
+body{
+  min-width: 60em;
+}
+/* ------------------------------------- */
+
+/* cabecera */
+header {
+  background-color: #4e9f3d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10em;
+}
+
+#logo {
+  width: 12em;
+  margin-left: 3em;
+  transition: width 2s;
+}
+
+#logo:hover {
+  width: 15em;
+}
+
+ul {
+  display: flex;
+}
+
+/* ------------------------------------- */
+
+/* menu */
+#enlacesmenu {
+  display: flex;
+}
+ul li {
+  margin: 0px 1em;
+  
+}
+
+li a {
+  color: #4e9f3d;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 1.2em;
+  font-family: Poppins;
+
+}
+
+
+
+li a:hover {
+  color: #d8e9a8;
+  text-decoration: underline;
+  transition: 1.5s;
+}
+
+#menu {
+  background-color: #1e5128;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 15px;
+  height: 4em;
+
+  display: flex;
+  align-items: center;
+  margin-right: 2em;
+}
+#redes ul li img {
+  width: 2em;
+}
+
+#redes, #copyright {
+  margin: 0em 1em;
+  font-family: lora;
+}
+
+/* ------------------------------------- */
+
+/* menu hamburguesa */
+nav#menu-hamburguesa{
+  display: none;
+}
+
+#menu-hambur{
+  display: none;  
+
+}
+
+#hamburguesa{
+  display: none;
+}
+
+#hamburguesa img{
+  width: 3em;
+}
+
+/* footer */
+
+footer {
+  background-color: #1e5128;
+  color: #9b9b9b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7em;
+}
+
+/* ---------------------------- */
+
+/* index */
+#inicio{
+  min-width: 60em;
+}
+img#principal {
+  height: 45em;
+}
+
+.h1index {
+  color: #1e5128;
+  margin-top: 15px;
+  font-family: Poppins;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: bold;
+  text-shadow: 1px 4px 4px rgba(78, 159, 61, 2);
+  font-weight: bold;
+  flex-wrap: nowrap;
+}
+
+span {
+  font-weight: bold;
+}
+
+/* ------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* contenido general */
+
+#titulo {
+  margin-top: 2em;
+  margin-left: -14em;
+  /* text-decoration: underline; */
+  font-size: 1.7em;
+  font-family: Poppins;
+
+}
+
+article {
+  background-color: #d8e9a8;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1e5128;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

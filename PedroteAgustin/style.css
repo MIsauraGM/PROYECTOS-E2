@@ -1,0 +1,550 @@
+/************************* GENERAL *************************/
+html {
+  font-family: "Raleway", roboto;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background-color: #eef2ff;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/*** Hamburguesa ***/
+main {
+  background: #14192d;
+  padding-bottom: 1em;
+  display: none;
+}
+
+.barra {
+  background: white;
+  margin-bottom: 2px;
+  border-radius: 2px;
+  width: 25px;
+  height: 5px;
+  list-style: none;
+}
+
+#hamburguesa {
+  display: none;
+  background: #14192d;
+  height: 45px;
+  width: 30px;
+  cursor: pointer;
+}
+
+@keyframes transicion {
+  from {
+    margin-left: -50em;
+  }
+}
+
+#menu {
+  /* display: none; */
+  position: absolute;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  background-color: #501464;
+  transform-origin: 0 0;
+  /*transform: translate(-100%);*/
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 6px;
+  animation-name: transicion;
+  animation-duration: 1.5s;
+}
+
+.menuItem {
+  text-align: center;
+  padding: 2px;
+  margin: 12px;
+}
+
+/************************* HEADER *************************/
+.header {
+  position: sticky;
+  top: 0;
+  padding: 1.5em;
+  height: 7em;
+  background-color: #14192d;
+  width: 100%;
+  z-index: 999;
+}
+
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/***** Menú *****/
+.menu {
+  position: static;
+  width: auto;
+  flex-direction: row;
+}
+
+.menu a {
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: white;
+  transform: scale(1.15);
+}
+
+a {
+  color: #d90062;
+  text-decoration: none;
+}
+
+.nombre a {
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/************************* INICIO *************************/
+#img-inicio {
+  width: 100%;
+}
+
+/************************* SOBRE MI *************************/
+#sobre {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  justify-content: space-between;
+  align-content: center;
+}
+.boton {
+  outline: thin solid #14192d;
+  border: 0;
+  cursor: pointer;
+  background-color: #d90062;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 1.5em;
+}
+
+.titulo {
+  margin-left: 23.4em;
+}
+
+.espaciado {
+  padding: 2rem 1rem;
+  filter: grayscale(0.2);
+}
+
+#miFoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  padding: 1em;
+}
+
+.centrado {
+  text-align: center;
+}
+
+#txt-sobre {
+  margin-left: 3em;
+}
+
+/***** linea de tiempo *****/
+* {
+  box-sizing: border-box;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container-time {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container-time::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ff9f55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent lightgray;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent lightgray transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: lightgray;
+  position: relative;
+  border-radius: 6px;
+}
+
+/************************* MIS PROYECTOS *************************/
+.projects > .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projects .section-title {
+  grid-column: span 3;
+}
+
+.section-title {
+  border-top: thin solid #d90062;
+  border-bottom: thin solid #d90062;
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  width: 250px;
+  text-align: center;
+  color: black;
+}
+
+.portafolio {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.portafolio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portafolio-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: #d90062;
+  color: white;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.portafolio-info > div {
+  padding: 1rem;
+  border: thin solid white;
+  width: 100%;
+  height: 100%;
+}
+
+.portafolio:hover .portafolio-info {
+  opacity: 0.8;
+}
+
+/************************* TESTIMONIOS *************************/
+.container-test {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.cliente {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cliente-video {
+  background-color: lightgray;
+  height: 16em;
+  width: 26em;
+  margin-top: 6em;
+  margin-left: auto;
+  margin-right: 12%;
+  margin-bottom: 2em;
+  border-radius: 1em;
+}
+
+.cliente-nom {
+  width: 13em;
+  height: 2.5em;
+  margin: 2.5em auto 0 12%;
+  font-size: 21px;
+}
+
+.cliente-com {
+  width: 28em;
+  height: 9em;
+  padding: 10px;
+  margin-left: 10.5%;
+  margin-right: auto;
+}
+
+.caja-coment {
+  box-shadow: 0.25em 0.25em 1em rgba(0, 0, 0, 0.25);
+  height: auto;
+  padding: 1em;
+}
+
+/************************* CONTACTO *************************/
+.redes {
+  margin: 1em auto;
+  padding: 1em;
+  width: 100%;
+  height: 144px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#tlf {
+  margin-left: 4em;
+}
+
+.img-contact {
+  width: 2em;
+  height: 2em;
+}
+
+.todas-redes {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.redes {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10%;
+}
+.nom-icono {
+  margin-left: -1.5em;
+}
+
+/*** Formulario de contacto ***/
+.formulario {
+  margin: 2em auto;
+  padding: 1em;
+  max-width: 600px;
+}
+
+.formulario > * {
+  padding: 0.5em;
+  margin: 1em auto;
+  display: block;
+  width: 100%;
+}
+
+.formulario imput,
+.formulario textarea {
+  font-size: 1em;
+  font-family: "Raleway";
+}
+
+.caja {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.form-btn {
+  width: 30%;
+}
+
+.error {
+  background-color: tomato;
+}
+
+/************************* FOOTER *************************/
+.footer {
+  margin-bottom: 4em;
+  padding: 0.5rem;
+  text-align: center;
+  color: white;
+  background-color: #501464;
+  margin-bottom: 0;
+}
+
+/*************************************************************************************/
+
+/************************* DISPOSITIVO MÓVIL *************************/
+@media screen and (max-width: 768px) {
+  /*** hamburguesa ***/
+  .header {
+    display: none;
+  }
+
+  main {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+  #menu a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #titulo-burguer {
+    color: #d90062;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  /*** Sobre mi ****/
+  #sobre {
+    grid-template-columns: repeat(1, 95%);
+  }
+
+  .titulo {
+    margin-left: 3.5em;
+  }
+
+  /*** Proyectos ***/
+  .projects > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects .section-title {
+    grid-column: span 2;
+  }
+
+  h3 + p {
+    display: none;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  /***** Testimonios *****/
+  .container-test {
+    flex-direction: column;
+  }
+  .cliente-nom {
+    width: 10em;
+    height: 3em;
+    margin: 2em auto 0;
+    font-size: 16px;
+  }
+
+  .cliente-com {
+    width: 24em;
+    height: auto;
+    padding: 12px;
+    margin: auto;
+  }
+
+  .cliente-video {
+    height: 15em;
+    width: 24em;
+    margin: 1em auto auto auto;
+  }
+
+  /***** Contacto *****/
+  .todas-redes {
+    display: grid;
+    grid-template-columns: 95%;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+}

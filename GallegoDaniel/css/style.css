@@ -1,0 +1,420 @@
+@font-face {
+  font-family: Oswald;
+  src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+/* HEADER, LOGO, NAV */
+
+div#hamburguesa img{
+  display: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5em;
+  background: #0A0A0A;
+  font-size: 2em;
+  border-bottom: 2px solid #66171b;
+}
+
+img {
+  width: 2em;
+  height: 2em;
+}
+
+#logo {
+  margin-right: 4em;
+}
+
+nav {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  height: 1em;
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#x {
+  border-bottom: 2px solid #f93943;
+}
+
+li {
+  margin: 2em;
+}
+
+.mis-Proy {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 71px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sobre-Mi {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 71px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contacto {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 71px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* BODY, MAIN, MAIN TEXT */
+
+body{
+  width: 100%;
+  background-color: #000;
+  margin-bottom: 0em;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+#main-text {
+  color: #FFFFFF;
+  width: 25em;
+  min-width:25em;
+  font-family: Roboto;
+  font-size: 2.5em;
+  line-height: 1em;
+  
+  color: #FFFFFF;
+  
+  padding: 1em 1em;
+
+  background: #0A0A0A;
+  border: 0.1em solid #F93943;
+}
+
+#boton{
+  display: flex;
+  width: 30%;
+  
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  justify-content: center;
+  margin-top: 4%;
+
+  border: none;
+
+  background: #F93943;
+}
+
+#boton-contacto{
+  display: flex;
+  width: 80%;
+  
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  justify-content: center;
+  margin-top: 4%;
+
+  border: none;
+
+  background-color: #F93943;
+}
+
+#boton:active, #boton-contacto:active, #ver-mas:active{
+  background-color: #FFFFFF;
+}
+
+/* FOOOTER, COLORES, FUENTES */
+
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  margin: 2em 0 0 0;
+}
+
+
+
+footer div:nth-child(1){
+  justify-content: center;
+  width: 20em;
+  min-width: 20em;
+
+  align-items: center;
+
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 1.3em;
+
+  margin: 1em 0 0 0;
+}
+
+#colores{
+  width: 10em;
+  min-width: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #FFFFFF;
+
+  margin: 0 0 0 3em;
+
+  font-family: Roboto;
+  
+}
+
+#red-salsa{
+  background-color: #F93943;
+}
+
+#blacks{
+  border: white 1px solid;
+}
+
+#white{
+  color: #000;
+  background-color: white;
+}
+
+
+#fuentes{
+  width: 10em;
+  min-width: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #FFFFFF;
+  
+  margin-top: 0%;
+}
+
+#fuentes h2, #rob-reg, #rob-bold{
+  font-family: Roboto;
+}
+
+#osw-reg{
+  font-family: Oswald;
+}
+
+#rob-bold{
+  font-weight: bold;
+}
+
+footer div:nth-child(4){
+  width: 20em;
+  min-width: 20em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: Roboto;
+  margin: 1em 0em 0 3em;
+}
+
+/* MIS PROYECTOS */
+
+h2{
+  display: flex;
+  color: #FFFFFF;
+  font-family: Oswald;
+  justify-content: center;
+  align-self: center;
+  margin-top: 2em;
+}
+
+.impar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+  margin-left: 5em;
+}
+
+#proyecto{
+  width: 25em;
+  height: 15em;
+  margin: 0em 5em;
+}
+
+
+.impar div {
+  color: #FFFFFF;
+  width: 25em;
+  min-width:25em;
+  margin:0em 5em;
+  font-size: 1em;
+  font-family: Roboto;
+}
+
+#mostrar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: Oswald;
+  margin-top: 5em;
+}
+
+#show{
+  display: none;
+}
+
+div#testImpar {
+	display:none;
+/*   border: #FFFFFF 1px solid;
+ */}
+
+input#show:checked ~ div#testImpar {
+	display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+div#testImpar p, div#testPar p{
+  color: #FFF;
+  width: 25em;
+  min-width:25em;
+  margin:0em 5em;
+  font-size: 0.8em;
+  font-family: Roboto;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+div#citas{
+/*   border: 1px solid #FFFFFF;
+ */  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div#testImpar img{
+  height: 12em;
+  width: 25em;
+  min-width:25em;
+  margin-left: 12em;
+}
+
+h4{
+  color: white;
+  font-family: Oswald;
+  text-decoration: underline;
+}
+
+hr{
+  margin-top: 2em;
+  background-color:#F93943;
+  height: 1px;
+}
+
+.par{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+  margin-left: 5em;
+}
+
+.par div{
+  color: #FFFFFF;
+  width: 25em;
+  min-width:25em;
+  margin:0em 5em;
+  font-size: 1em;
+  font-family: Roboto;
+}
+
+div#testPar {
+  display:none;
+}
+
+input#show:checked ~ div#testPar {
+	display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+div#testPar img{
+  height: 12em;
+  width: 25em;
+  min-width:25em;
+  margin-right: 15em;
+}
+
+#testPar div#citas{
+  margin-right: -3.5em;
+}
+
+#ver-mas{
+  display: flex;
+  width: 6em;
+  height: 1.5em;
+  margin-top: 0.4em;  
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5em;
+  justify-content: center;
+
+  border: none;
+
+  background: #F93943;
+}
+
+#vMas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

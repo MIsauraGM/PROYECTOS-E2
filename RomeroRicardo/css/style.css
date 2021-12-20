@@ -1,0 +1,443 @@
+/* Aplicamos el color degradado */
+body {
+    background: linear-gradient(16deg, rgba(225,248,255,1) 8%, rgba(142,203,223,1) 100%);
+    margin: 0;
+}
+header {
+  border-bottom: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+#burger {
+  display: none;
+}
+#burger_img {
+  display: none;
+}
+
+header > h1 {
+    margin: 0.3em auto 0em;
+    padding-left: 4.5em;
+    text-align: center;
+    font-size: 3em;
+    display: block;
+}
+
+header > #link {
+    margin: 3em 3em;
+    top: 20px;
+    width: 7em;
+    height: 5vh;
+    text-align: left;
+    float:right; 
+    clear:right;
+
+}
+header > h1 > a {
+  text-decoration: none;
+  color: black;
+}
+
+header > h1 > a:hover {
+  color: blue;
+}
+header > #link > a {
+    text-decoration: none;
+    color: black;
+}
+
+header > #link > a:hover {
+    color: blue;
+
+}
+#contacto {
+  display: flex;
+  margin-top: 75px;
+  margin-left: 12.5vw;
+  width: 75vw;
+}
+#correo {
+  width: 37.5vw;
+}
+form > span {
+  display: none;
+  color: rgb(144, 0, 0);
+  font-size: large;
+}
+#redes_sociales div{
+  display: inline;
+  height: 35px;
+  font-size: large;
+  margin-left: 15px;
+}
+#redes_sociales > a > img {
+  margin-top: 20px;
+  height: 35px;
+  width: 35px;
+}
+
+.text {
+  display: block;
+}
+
+.relleno {
+  height: 500px;
+}
+main {
+    margin-left: 10vw;
+    width: 80vw;
+    -webkit-box-shadow: 0px 9px 28px -9px;
+    -moz-box-shadow: 0px 9px 28px -9px;
+    box-shadow: 0px 9px 28px -9px;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    padding: 20px;
+  }
+  #presentacion{
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .imagen {
+
+      display: flex;
+      justify-content: center;
+  }
+  .imagen > img {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+      padding-left: 3vw;
+      padding-top: 5vh;
+      width: 185px;
+      height: 200px;
+  }
+  .imagen:hover > img {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+  #presentacion > .parrafo {
+      margin-left: 5em;
+  }
+  .parrafo > p{
+      font-size: x-large;
+  }
+  #curriculum > h1{
+      text-align: center;
+  }
+  * {
+      box-sizing: border-box;
+    }
+/* #proyectos {
+  display: flex;
+  justify-content: space-between;
+} */
+.proyecto {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.proyecto > img {
+  width: 400px;
+  height: 300px;
+  border: solid 1px black;
+  margin: 10px;
+}
+.proyecto > p {
+  width: 50vw;
+  padding: 30px;
+  font-size: large;
+}
+.proyecto > p > b{
+  font-size: x-large;
+  margin: 5px;
+}
+
+  /*Línea del tiempo */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #A9D6E5;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Contenedor alrededor del contenido */
+  .container {
+    padding: 10px 50px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* Los circulos */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #61D4E8;
+    border: 4px solid #2DA1E7;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Situa el contenedor en la izquierda */
+  .left {
+    left: 0;
+  }
+  
+  /* Situa el contenedor en la derecha */
+  .right {
+    left: 50%;
+  }
+  
+  /* Flechas de la izquierda que apuntan a la derecha */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Flechas de la derecha que apuntan a la izquierda */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Situa los circulos de la derecha */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* Contenido */
+  .content {
+    padding: 20px 30px;
+    background-color: #A9D6E5;
+    position: relative;
+    border-radius: 6px;
+   }
+  
+  /* Media queries - Se adapta toda la linea del tiempo a la izquierda cuando la pantalla es menor
+                     de 700px */
+  @media screen and (max-width: 800px) {
+  /* Situa la linea a la izquierda */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Los contenedores ocupan todo el ancho */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Todas las flechas apuntan a la izquierda */
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Posiciona los circulos */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Cambia los contenedores de la derecha para que actuen como los de la izquierda */
+    .right {
+      left: 0%;
+    }
+  }
+  .testimonio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: large;
+    padding: 5%;
+  }
+
+  .testimonio > div > p {
+    padding: 10px;
+    width: 40vw;
+  }
+
+  .video > iframe{
+    width: 500px;
+    height: 300px;
+  }
+  
+#subir > p {
+  background-color: rgb(190, 240, 255) ;
+  padding: 20px;
+}
+footer{
+  display: flex;
+  background-color: rgba(225,248,255,1);
+  width: 100%;
+  height: 100px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+#redes > a > img {
+  width: 25px;
+  height: 25px;
+}
+@media screen and (max-width: 850px) {
+  #burger {
+    width: 90%;
+    display: none;
+    flex-direction: column;
+
+  }
+  #cont_bur {
+    display: flex;
+    background-color: rgb(92, 201, 252);
+  }
+  #cerrar {
+    width: 10%;
+    height: 30px;
+    display: flex;
+  }
+  #burger > div > a {
+    text-decoration: none;
+    color: black;
+  }
+  #burger > div > a:hover {
+  color: blue;
+}
+  #burger > div > img {
+    width: 30px;
+    height: 30px;
+  }
+  #burger_img {
+    display: flex;
+  }
+  #burger_img {
+    width: 30px;
+    height: 30px;
+  }
+
+  header {
+    display: block;
+    border: none;
+  }
+  #link {
+    display: none;
+  }
+  header > h1 {
+    margin: 0px;
+    text-align: center;
+    padding-left: 0em;
+  }
+  #presentacion{
+  
+    display: block;
+}
+   #presentacion > .parrafo {
+    display: block;
+    margin-left: 0;
+  }
+  .imagen {
+  display: block;
+  width: 100%;
+  }
+  main {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 90vw;
+    -webkit-box-shadow: 0px 9px 28px -9px;
+    -moz-box-shadow: 0px 9px 28px -9px;
+    box-shadow: 0px 9px 28px -9px;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    padding: 20px;
+  }
+  .testimonio > div > p {
+    padding: 10px;
+    width: 100%;
+  }
+  .video > iframe{
+    width: 100%;
+    height: auto;
+  }
+  .proyecto {
+    display: block;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .proyecto > img {
+    margin: 0;
+    width: 100%;
+    height: 75%;
+    border: solid 1px black;
+  }
+  .proyecto > p {
+    width: 100%;
+    padding: 30px;
+    font-size: large;
+  }
+  .proyecto > p > b{
+    font-size: x-large;
+    margin: 5px;
+  }
+  #contacto {
+    display: block;
+    margin-top: 75px;
+    margin-left: 12.5vw;
+    width: 75vw;
+  }
+  #correo {
+    width: 100%;
+  }
+
+  
+  #redes_sociales {
+    margin-top: 50px;
+  }
+  #redes_sociales div{
+    display: inline;
+    height: 35px;
+    font-size: large;
+    margin-left: 15px;
+  }
+  #redes_sociales > a > img {
+    margin-top: 20px;
+    height: 35px;
+    width: 35px;
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <script defer src="js/burger.js"></script>
+  <script defer src="js/validacion.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/mediaquery.css">
+  <style>
+        [x-cloak] {
+        visibility: hidden;
+        overflow: hidden;
+        display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="hamburguesa">
+      <img src="images/burger.png" alt="Icono menú hamburguesa">
+    </div>
+    <div id="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="home">HOME</a></li>
+        <li><a href="misProyectos.html" class="mis-Proy">MIS PROYECTOS</a></li>
+        <li><a href="sobreMi.html" class="sobre-Mi">SOBRE MÍ</a></li>
+        <li><a href="contacto.html" class="contacto" id="x">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="cuerpo">
+
+    <div id="izquierdo">
+      <div id="telefono">
+        <p>Daniel Gallego Calderón</p>
+        <p>+34 601 123 456</p>
+
+        <p>Estas son mis redes sociales, donde podrás interactuar conmigo
+          y estar al tanto sobre todas las novedades sobre mí. ¡Vamos, echa un ojo!
+        </p>
+      </div>
+
+      <div id="redes">
+        <a href="https://github.com/"><img src="images/logo github.png" alt="Logo Github"></a>
+        <a href="https://twitter.com/"><img src="images/logo twitter.png" alt="Logo Twitter"></a>
+        <a href="https://es.linkedin.com/"><img src="images/logo linkedin.png" id="linkedin" alt="Logo LinkedIn"></a>
+      </div>
+    </div>
+    <div id="formulario">
+      <p>Sientete totalmente libre de enviarme un mensaje, 
+        ya sea para comentarme cualquier duda o charlar sobre algún tema
+        que te apetezca, desde alguna idea de proyecto hasta
+        cual es tu película favorita de Star Wars.
+      </p>
+      <form id="form1" action="validar.php">
+        <label for="Nombre">Nombre</label>
+        <input class="text-black" type="text" id="nombre" minlength="2" maxlength="16" pattern="[A-Z a-z]{2,16}" 
+        required="required" title="Introduce de 2 a 16 caracteres no numericos">
+        <p id="errNombre"></p>
+
+        <label for="Apellidos">Apellidos</label>
+        <input class="text-black" type="text" id="apellidos" minlength="2" maxlength="50" pattern="[A-Z a-z]{2,50}" 
+        required="required" title="Introduce de 2 a 50 caracteres no numericos">
+        <p id="errApellido"></p>
+
+        <label for="Correo">Correo electrónico</label>
+        <input class="text-black" type="email" id="correo"  pattern="^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$" 
+        title='ej: "name@example.com"' required="required">
+        <p id="errEmail"></p>
+
+        <label for="Mensaje">¡Escribe tu mensaje!</label>
+
+        <div class='flex flex-col relative max-w-sm w-full rounded-lg overflow-hidden mx-auto' x-data="{maximum: ''}">
+          <textarea id="txtArea" cols="30" rows="10" minlength="10" maxlength="210" x-model="maximum" x-ref="maximum"
+          class="text-black block w-full mt-1 py-2 px-3 rounded-md shadow-sm focus:outline-none" disabled></textarea>
+          <span class="absolute px-2 py-1 text-xs text-black bg-red-500 rounded right-2 bottom-2 mb-4" x-text="$refs.maximum.getAttribute('maxlength') - maximum.length" x-cloak></span>
+        </div>
+<!--    <textarea name="texarea" id="txtArea" cols="30" rows="10" minlength="10" maxlength="1000" 
+        title='Introduce de 10 a 1000 caracteres' required="required" disabled></textarea>--> 
+        <p id="errTextA"></p> 
+
+        <button id="boton" type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

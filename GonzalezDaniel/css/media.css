@@ -1,0 +1,217 @@
+@keyframes movermenu {
+  from {margin-left: -30em;}
+  to {margin-left: 11em;;}
+}
+@keyframes quitarmenu {
+  from {margin-left: 11em;}
+  to {margin-left: -30em;;}
+}
+
+nav#menu-hamburguesa{
+  position: absolute;  
+  /* background-color: aqua; */
+  width: 10em;
+  z-index: 500;
+  display: flex;
+  margin: 3em 20em 0em 11em;
+   margin-right: 20em; 
+   z-index: 500;
+ font-size: 1.5em;
+  animation-name: movermenu;
+  animation-duration: 1.5s;
+  
+}
+#menu-hamburguesa.quitar{
+  animation-name: quitarmenu;
+  animation-duration: 1.5s;
+  
+}
+
+
+nav#menu-hamburguesa ul{
+  
+  width: 10em;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  background-color: aqua;
+  /* margin: 2em; */
+  padding: 1em;
+  position: absolute;
+  background-color: #1e5128;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 15px;
+  height: auto;
+  width: 13em;
+
+  
+  align-items: center;
+  
+}
+
+
+
+
+/* cabecera */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+body{
+  min-width: 10em;
+}
+/* #logo {
+  height: 4em;
+  width: 5em;
+  margin-bottom: 1em;
+} */
+
+
+section h2.h1index {
+  font-size: 1em;
+}
+
+/* menu */
+#menu {
+  display: none;
+  margin: 0px;
+  font-size: 0.7em;
+  margin-bottom: 3em;
+}
+
+img#principal {
+  height: 18em;
+}
+/* section p {
+  font-size: 1em;
+} */
+
+ul li {
+  margin: 0px 1em;
+}
+
+/* menu hamburguesa */
+
+#hamburguesa{
+  display: flex;
+
+}
+#hamburguesa:hover{
+  cursor: pointer;
+}
+
+
+/* sobre mi */
+div.sobre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#lenguajes {
+  display: none;
+}
+
+.sobre p {
+  width: 16em;
+  font-size: 1.4em;
+  margin: 1em 2em;
+}
+
+.sobre img {
+  width: 12em;
+  margin-top: 1em;
+}
+
+
+/* testimonios */
+
+
+
+#titulo {
+  margin-left: 0em;
+}
+
+#redes,#copyright {
+  font-size: 0.5em;
+  margin: 0em 0.5em;
+}
+
+#imgemp img {
+  margin: 1em 1em;
+  height: 2em;
+}
+
+/* mis proyectos */
+#misproyectosweb {
+  flex-direction: column;
+}
+
+/* redes sociales */
+
+#contenidoredes {
+  flex-direction: column;
+}
+
+.logocontacto {
+  width: 3em;
+}
+
+#mapa img {
+  display: none;
+}
+
+/* ---------------------------------- */
+/*  */
+#parproyecto p {
+  font-size: 0.8em;
+}
+
+#testimonios {
+  display: flex;
+  flex-direction: column;
+}
+
+#ferreteria {
+  display: flex;
+  flex-direction: row;
+}
+
+#video {
+  width: 28em;
+}
+
+#ferreteria img {
+  margin-top: 2em;
+  width: 12em;
+}
+
+#parrtest {
+  margin-top: 3em;
+  width: 19em;
+}
+/* formulario  */
+#imgform{
+  display: none;
+}
+textarea{
+  width: 25em;
+}
+body#contacto{
+  min-width: 40em;
+}
+
+#proyectos, #sobre-mi{
+  min-width: 30em;
+}
+
+
+#inicio{
+  min-width: 10em;
+}
+

@@ -1,0 +1,452 @@
+/*  */
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "lora";
+  src: url("../font/lora/Lora-Regular.ttf");
+}
+
+/* reseteo página */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  /* display: block; */
+
+  font-family: lora;
+}
+/* ------------------------------------- */
+
+/* cabecera */
+header {
+  background-color: #4e9f3d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10em;
+}
+
+#logo {
+  width: 12em;
+  margin-left: 3em;
+  transition: width 3s;
+}
+
+#logo:hover {
+  width: 20em;
+}
+
+ul {
+  display: flex;
+}
+
+/* ------------------------------------- */
+
+/* menu */
+#enlacesmenu {
+  display: flex;
+}
+ul li {
+  margin: 0px 1em;
+  list-style: none;
+}
+
+li a {
+  color: #4e9f3d;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 1em;
+  font-family: Poppins;
+
+}
+
+
+
+li a:hover {
+  color: #d8e9a8;
+  text-decoration: overline;
+  transition: 1.5s;
+}
+
+#menu {
+  background-color: #1e5128;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 15px;
+  height: 4em;
+
+  display: flex;
+  align-items: center;
+  margin-right: 2em;
+}
+#redes ul li img {
+  width: 2em;
+}
+
+#redes, #copyright {
+  margin: 0em 1em;
+  font-family: lora;
+}
+
+/* ------------------------------------- */
+/* footer */
+
+footer {
+  background-color: #1e5128;
+  color: #9b9b9b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7em;
+}
+
+/* ---------------------------- */
+
+/* index */
+
+img#principal {
+  height: 45em;
+}
+
+.h1index {
+  color: #1e5128;
+  margin-top: 15px;
+  font-family: Poppins;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: bold;
+  text-shadow: 1px 4px 4px rgba(78, 159, 61, 2);
+  font-weight: bold;
+  flex-wrap: nowrap;
+}
+
+span {
+  font-weight: bold;
+}
+
+/* ------------------------------------- */
+
+/* mis proyectos  */
+
+#proyectoweb h2{
+    justify-content: end;
+}
+#imgempresas div img {
+  margin: 3em 2em;
+  height: 4em;
+}
+
+#misproyectosweb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 3em;
+}
+
+.proyectoweb h2 {
+  font-size: 1em;
+ 
+}
+
+.proyectoweb {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  margin-left: 4em;
+}
+
+
+.proyectoweb img {
+  height: 12em;
+  width: 25em;
+  margin: 1.5em 0em 1em ;
+}
+
+.proyectoweb p {
+  margin-bottom: 2em;
+  width: 28em;
+  font-size: 0.9em;
+}
+
+/* ------------------------------------- */
+
+/* seccion sobre mi */
+div.sobre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 3em;
+}
+
+
+.sobre p {
+  width: 18em;
+  font-size: 1.4em;
+  margin: 1em 2em;
+}
+
+.sobre img {
+  width: 20em;
+}
+
+/*seccion  testimonio */
+
+#video {
+  width: 45em;
+  margin-top: 3em;
+}
+
+#ferreteria img {
+  width: 12em;
+  margin-top: 4em;
+}
+
+#parrtest {
+  font-size: 1.3em;
+  margin-top: 4em;
+  width: 29em;
+  margin-bottom: 3em;
+}
+
+#testimonios {
+  display: flex;
+}
+
+#ferreteria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+  margin-left: 2em;
+  /* margin-top: 3em; */
+  margin-bottom: 3em;
+}
+
+/* -------------------------- */
+
+/* contactos */
+#mensajetexarea {
+  margin-top: 2em;
+}
+
+#formulario1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+#formulario1 p {
+  width: 27em;
+  color: red;
+}
+
+#imgform {
+  width: 13em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: inline-block;
+  width: 80px;
+}
+
+input {
+  background-color: #4e9f3d;
+  padding: 3px;
+}
+
+input::placeholder {
+  color: #3a6e41;
+}
+
+input,
+label {
+  margin: 1em;
+  font-size: 1.3em;
+}
+
+input:invalid,
+textarea:invalid {
+  border: 2px dashed red;
+}
+
+input:valid,
+textarea:valid {
+  border: 2px solid black;
+}
+
+#menserror {
+  margin-top: 3em;
+}
+
+textarea {
+  width: 27em;
+  height: 15em;
+  background-color: #4e9f3d;
+  /* color: #1E5128; */
+  font-size: 1.3em;
+  margin: 1em;
+  padding: 1em;
+}
+
+button {
+  background-color: #4e9f3d;
+  width: 6em;
+  height: 3em;
+  font-family: Poppins;
+  border-radius: 10px;
+  margin-left: 35em;
+  margin-bottom: 3em;
+  padding: 1em;
+}
+
+/* ------------------------------------- */
+
+/* redes sociales */
+.redes {
+  display: flex;
+  align-items: center;
+  margin: 2em;
+}
+
+.redes a img{
+   margin-left: 6em; 
+}
+#contenidoredes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3em;
+}
+
+.logocontacto {
+  width: 3em;
+}
+
+.redes a{
+    margin-left: 2em;
+}
+
+#mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 3em;
+}
+
+#enunciado {
+  margin-left: 1em;
+}
+
+#mapa img {
+  width: 19em;
+  margin-bottom: 5em;
+  margin-top: 0em;
+}
+
+/* ---------------------------------- */
+
+/* curriculum */
+#contenidocurriculum {
+  display: flex;
+}
+
+#lineacentral {
+  border-right: 2px solid #4e9f3d;
+}
+
+#cajasdere {
+  margin-top: 10em;
+}
+
+.caja p {
+  justify-content: center;
+  color: #1e5128;
+  font-size: 1em;
+}
+
+.caja {
+  height: 10em;
+  width: 20em;
+  background-color: #4e9f3d;
+  margin: 6em;
+  border-radius: 20px;
+  padding: 0em 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+span {
+  text-decoration: underline;
+}
+
+.cajalineaizq {
+  position: absolute;
+  border-top: 2px solid #4e9f3d;
+  margin-left: 28em;
+  margin-top: 5em;
+  width: 6em;
+}
+
+.cajalineader1 {
+  position: absolute;
+  border-top: 2px solid #4e9f3d;
+  margin-top: 11em;
+  width: 6em;
+}
+
+.cajalineader2 {
+  position: absolute;
+  border-top: 2px solid #4e9f3d;
+  margin-top: 5em;
+  width: 6em;
+}
+
+/* ---------------------------------- */
+
+/* contenido general */
+
+#titulo {
+  margin-top: 2em;
+  margin-left: -14em;
+  /* text-decoration: underline; */
+  font-size: 1.7em;
+  font-family: Poppins;
+
+}
+
+article {
+  background-color: #d8e9a8;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1e5128;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

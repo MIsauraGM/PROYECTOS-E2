@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="JS/main.js" defer></script>
+    <script src="JS/form.js" defer></script>
+    <script src="JS/menuHambuguesa.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h3>Portfolio</h3>
+    </header>
+    <div id="hamburguesa">
+        <div class="_layer -top"></div>
+        <div class="_layer -mid"></div>
+        <div class="_layer -bottom"></div>
+    </div>
+    <div class="sidenav original">
+        <a href="#">
+            <div class="circle active"></div>
+        </a><a href="#proyectos">
+            <div class="circle"></div>
+        </a><a href="#testimonio">
+            <div class="circle"></div>
+        </a><a href="#estudios">
+            <div class="circle"></div>
+        </a><a href="#mas">
+            <div class="circle"></div>
+        </a>
+    </div>
+    <main>
+        <div class="inicio" >
+            <h1>Un poco sobre mí</h1>
+            <p>Me llamo Pablo Leal del Ojo y soy un joven desarrolador de aplicaciones web, que le entusiasma el
+                mundo de la programación y estar constantemente aprendiendo cosas nuevas. <br>
+                Con esta página espero que aprendas un poco sobre mí, mís habilidades actuales y mí pasión por mí trabajo</p>
+            <div><img src="img/yo.png" alt="no esta"></div>
+        </div>
+        <div id="proyectos" >
+            <h1>Proyectos</h1>
+            <div id="pcirclesContainer">
+                <div class="pcircles active" id="1"></div>
+                <div class="pcircles" id="2"></div>
+                <div class="pcircles" id="3"></div>
+            </div>
+            <p id="pProyect">Pariclicker es un proyecto, no terminado todavia hecho por mi y Ricardo Arana que fue hecho con el proposito de aprender y es un juego
+                del genero de los clickers entorno ha hacer ejercicio, que consiste en pulsar y subir tu fuerza y basico y simple pero sirvio para el aprendizaje
+                de muchas cosas.<br>
+                Tanto este como todos los otro proyectos, te llevaran a la página al pulsarlos.</p>
+            <div class="proyectoWindow">
+                <a href="https://pabloleabr.github.io/Parikiclicker/" id="plink" target="_blank">
+                    <img src="img/proyecto1.png" alt="no esta" id="proyectImg">
+                </a>
+            </div>
+        </div>
+        <div id="testimonio">
+            <h1>Testimonios</h1>
+            <div>
+                <!--por si se quiere ahcer con video
+                    <video width="400" controls>
+                        <source src="https://www.youtube.com/watch?v=FlckzMKNZW0&ab_channel=NancyPEllis" type="video/mp4">
+                    </video>
+                -->
+                <iframe src="https://www.youtube.com/embed/FlckzMKNZW0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <p>"Trabaja de manera profesional, rápido y sin distracciones siempre haciendo su trabajo para la fecha prevista o antes"</p>
+            </div>
+            <div>
+                <p>"Gran trabajador, que ayuda siempre a compañeros que tengan dudas o necesiten ayuda con un trabajo"</p>
+                <iframe src="https://www.youtube.com/embed/FlckzMKNZW0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="estudios">
+            <h1>Estudios e información laboral</h1>
+            <div class="timeline">
+                <div class="container left">
+                  <div class="content">
+                    <h2>2019</h2>
+                    <p>Bachillerato Tecnológico y B2 de Ingles</p>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <h2>2022</h2>
+                    <p>Grado superior de desarrollo de aplicaciones web y prácticas de empresa</p>
+                  </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                      <h2>2023</h2>
+                      <p>Trabajando en x compañia durante un año como x programador</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="mas inicio">
+            <h1 id="mas">¿Que más tienes que saber sobre mí?</h1>
+            <p>Ademas de estudiar y trabajar como desarrolador de appliciones web, me gusta desarrollar aplicaciones
+                y algun minijuego como hobbie. <br>
+                Soy gran fan de las artes marciales, comida rica y de hecharme siesta los días que
+                puedo permitírmelo.</p>
+            <div><img src="img/yo.png" alt="no esta"></div>
+        </div>
+    </main>
+    <footer>
+        <h1>Contáctame: </h1>
+        <form action="#" method="get">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" maxlength="50" required>
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" name="apellidos" id="apellidos" maxlength="50" required>
+            <label for="mail">Mail: </label>
+            <input type="text" name="mail" id="mail" required pattern="^\w+@\w+\.\w+$">
+
+            <label for="mensaje">Mensaje: </label>
+            <textarea  name="mensaje" id="mensaje" cols="30" rows="8" style="resize: none;" required></textarea>
+
+            <input type="submit" value="Enviar" id="enviar">
+        </form>
+        <div>
+            <p>(c) Trabao hecho por Pablo Leal del Ojo Bravo</p>
+            <div id="icons">
+                <a href="#" class="fa fa-facebook fa-3x"></a>
+                <a href="#" class="fa fa-twitter fa-3x"></a>
+                <a href="#" class="fa fa-phone fa-3x"></a>
+                <a href="#" class="fa fa-github fa-3x"></a>
+                <a href="#" class="fa fa-whatsapp fa-3x"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

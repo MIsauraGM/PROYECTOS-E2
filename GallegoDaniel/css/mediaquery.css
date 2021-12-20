@@ -1,0 +1,161 @@
+@media screen and (max-width: 748px) {
+    header{
+        width: 80%;
+        padding: 0%;
+    }
+
+    body{
+        width: auto;
+    }
+    
+
+    #logo{
+        display: none;
+    }
+
+/* MENU HAMBURGUESA */
+
+    div#hamburguesa img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f93943;
+        border-radius: 5%;
+    }
+
+    @keyframes mover {
+        from {margin-left: -30em;}
+        to {margin-left: 11em;;}
+    }
+    @keyframes esconder {
+        from {margin-left: 11em;}
+        to {margin-left: -30em;;}
+    }
+      
+    nav#burger-menu{
+        position: absolute;  
+        /* background-color: aqua; */
+        width: 10em;
+        z-index: 500;
+        display: flex;
+        margin: 2em 20em 0em 12em; 
+        z-index: 500;
+        font-size: 1.5em;
+        animation-name: mover;
+        animation-duration: 1s;
+        
+      }
+      #burger-menu.esconder{
+        animation-name: esconder;
+        animation-duration: 2s;        
+      }
+      
+      
+      nav#burger-menu ul{        
+        width: 10em;
+        display: flex;
+        flex-direction: column;
+        color: black;
+        /* margin: 2em; */
+        padding: 1em;
+        position: absolute;
+        background-color: #f93943;
+        border: 2px solid #000000;
+        box-sizing: border-box;
+        height: auto;
+        width: 13em;       
+        align-items: center;
+        justify-content: center;
+      }
+
+      nav#burger-menu ul li{
+          text-align: center;
+          margin-left: 5em;
+          font-family: Oswald;
+          font-weight: bold;
+          text-decoration: underline;
+          
+      }
+
+      nav#burger-menu ul a{
+        color: #000000;
+      }
+    
+      
+      nav#burger-menu ul a:hover{
+        color: #FFF;
+      }
+
+    nav{
+        display: none;
+    }
+
+    /* SOBRE MI RESPONSIVE */
+    
+    div#info-personal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#info-personal #proyecto{
+        width: auto;
+        max-width: 15em;
+        height: 15em;
+        max-height: 15em;
+        margin-top: 2%;
+    }
+
+    div#info-personal div {
+        color: #FFFFFF;
+        width: 20em;
+        min-width:20em;
+        margin-top: -4em;
+        font-size: 1em;
+        font-family: Roboto;
+    }
+
+    div#info-pro #circulo1, div#info-pro #circulo2, div#info-pro #circulo3{
+        max-width: 7em;
+        max-height: 7em;
+    }
+
+    div#info-pro #circulo2{
+        margin-left: -19.8em;
+        margin-top: 2em;
+    }
+
+    div#info-pro #circulo3{
+        margin-left: -19.8em;
+        margin-top: 2em;
+    }
+
+
+
+    div#info-pro{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5em;
+    }
+
+    div#parrafos{
+        display: flex;
+        flex-direction: column;
+        margin-top: -35em;
+        margin-left: 30em;
+    }
+
+    div#parrafos p:nth-child(1){
+        margin-top: 10.5em;
+        margin-left: -5em;
+    }
+
+    div#parrafos p:nth-child(2){
+        margin-top: 4.5em;
+        margin-left: -26em;
+    }
+
+    div#parrafos p:nth-child(3){
+        margin-top: 4em;
+        margin-left: -25em;
+    }
+}

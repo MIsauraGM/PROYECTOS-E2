@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Juan Diego</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-green-50">
+    <header class="flex h-20 w-auto" style="background-color: #A8DADC;" >
+        <div class="flex justify-start self-center font-bold text-2xl pl-4 w-full">
+            JUAN DIEGO JURADO PIMENTEL
+        </div>
+        <nav class="flex items-center justify-end pr-0 w-full "  id="nav">
+          <a class="text-center w-16 text-lg mx-4" href="#inicio">Inicio</a>
+          <a class="text-center w-16 text-lg mx-4" href="#proyectos">Proyectos</a>
+          <a class="text-center w-16 text-lg mx-4" href="#cv">CV</a>
+          <a class="text-center w-17 text-lg mx-4" href="#sobre-mi">Sobre mí</a>
+          <a class="text-center w-16 text-lg mx-4" href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <div class="flex h-96 mx-8 mt-8 mb-24">
+        <div class="text-2xl w-3/4 flex items-center justify-center flex-col" >
+            <p>Soy Juan Diego, Técnico Superior en Sistemas de Telecomunicaciones e
+              Informáticos y Desarrollador de Aplicaciones Web.</p>
+        </div>
+        <div class="w-6/12 flex justify-end items-center " >
+            <img class="rounded-full h-3/4 w-2/4" src="img/jdjp.jpg" alt="foto-jdjp" id="jdjp">
+        </div>
+    </div>
+    <p class="text-2xl text-center" id="proyectos">Proyectos</p>
+    <div>
+      <input type="range" name="slider" id="slider" value="0" max="100" min="0" autocomplete="off"
+      class="transform rotate-90 origin-left mx-2 w-96">
+        <ul class="text-xs mx-8 space-y-4">
+            <li>
+                <img class="rounded-full h-24 w-24 lex items-center justify-center" src="img/bulevar.jpg" alt="Bulevar">
+                <div class="mt-4">
+                  <p>Estudio Bulevar</p>
+                  <p>Diseño para un estudio de diseño.</p>
+                </div>
+            </li>
+            <li>
+                <img class="rounded-full h-24 w-24 lex items-center justify-center" src="img/zodiacolors.png" alt="Zodiacolors">
+                <div class="mt-4">
+                  <p>Zodiacolors</p>
+                  <p>Diseño de una sección para la marca Titanux</p>
+                </div>
+            </li>
+            <li>
+                <img class="rounded-full h-24 w-24 lex items-center justify-center" src="img/original.jpg" alt="original">
+                <div class="mt-4">
+                  <p>Lo + original</p>
+                  <p>Diseño de un sitio web para un comercio local.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <p class="mt-8 text-2xl text-center" id="proyectos">Currículum Vitae</p>
+    <div>
+      <p class="mt-8 text-xl text-center" id="proyectos">Timeline</p>
+      <!-- Primer componente -->
+      <section>
+        <div class="text-black">
+        <div class="container mx-auto flex flex-col justify-center md:flex-row my-12 md:my-24">
+          <div class="ml-0 md:ml-12 lg:w-2/3 sticky">
+            <div class="container mx-auto w-full h-full">
+              <div class="relative wrap overflow-hidden p-10 h-full">
+                <div class="border-2-2 border-yellow-555 absolute h-full border"
+                  style="right: 50%; border: 2px solid #504a37; border-radius: 1%;"></div>
+                <div class="border-2-2 border-yellow-555 absolute h-full border"
+                  style="left: 50%; border: 2px solid #FFC100; border-radius: 1%;"></div>
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                  <div class="order-1 w-5/12"></div>
+                  <div class="order-1 w-5/12 px-1 py-4 text-right">
+                    <p class="mb-3 text-base text-yellow-400">2018</p>
+                    <h4 class="mb-3 font-bold text-lg md:text-2xl">Bachillerato (Ciencias)</h4>
+                  </div>
+                </div>
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                  <div class="order-1 w-5/12"></div>
+                  <div class="order-1  w-5/12 px-1 py-4 text-left">
+                    <p class="mb-3 text-base text-yellow-400">04/2020 - 06/2020</p>
+                    <h4 class="mb-3 font-bold text-lg md:text-2xl">Servicio técnico (MediaMarkt)</h4>
+                  </div>
+                </div>
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                  <div class="order-1 w-5/12"></div>
+                  <div class="order-1 w-5/12 px-1 py-4 text-right">
+                    <p class="mb-3 text-base text-yellow-400"> 2020</p>
+                    <h4 class="mb-3 font-bold text-lg md:text-2xl">Formación Profesional de Grado Superior en
+                      Sistemas de Telecomunicaciones e Informáticos.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <img class="mx-auto -mt-36 md:-mt-36" src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+        <p class="mt-36 text-xl text-center" id="proyectos">Aptitudes:</p>
+        <ul class="flex flex-col items-center justify-center">
+          <li>
+            <p>Proactivo:</p>
+            <progress value="67" max="100"></progress>
+          </li>
+          <li>
+            <p>Resolutivo:</p>
+            <progress value="70" max="100"></progress>
+          </li>
+          <li>
+            <p>Autodidacta:</p>
+            <progress value="60" max="100"></progress>
+          </li>
+          <li>
+            <p>Capacidad de Adaptación:</p>
+            <progress value="80" max="100"></progress>
+          </li>
+        </ul>
+    </div>
+    <p class="text-2xl text-center mt-16 mb-8" id="proyectos">Sobre mí</p>
+    <div class="mx-10 text-justify space-y-2 ">
+      <p>Me llamo Juan Diego, soy Técnico Superior en Sistemas de Telecomunicaciones
+        e Informáticos, actualmente estudiando Desarrollo de Aplicaciones Web.</p>
+
+      <p>Cuento con experiencia en reparaciones de equipos informáticos, además
+        de contar con cursos de formación para formarme más en el sector tecnológico.
+        Además de hacer proyectos, como desarrollador, descritos anteriormente.</p>
+    </div>
+    <p class="text-2xl text-center mt-16" id="proyectos">Contacto</p>
+    <div class="flex">
+        <div class="space-x-10 w-full flex items-center justify-center">
+            <a class="w-16 h-16" href="https://github.com/juandiegojp"><img src="img/icons/github.png" alt="github"></a>
+            <a class="w-16 h-16" href="https://es.linkedin.com/in/juan-diego-jurado-pimentel-934b3a204"><img src="img/icons/linkedin.png" alt="linkedin"></a>
+            <a class="w-16 h-16" href="https://t.me/juandiewe"><img src="img/icons/telegram.png" alt="telegram"></a>
+            <a class="w-16 h-16" href="https://twitter.com/"><img src="img/icons/twitter.png" alt="twitter"></a>
+        </div>
+        <!-- Segundo componente -->
+        <div class="w-full">
+          <div class="h-96"></div>
+          <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12">
+              <div class="bg-white w-full shadow rounded p-8 sm:p-12 -mt-72">
+                  <p class="text-3xl font-bold leading-7 text-center">Contact me</p>
+                  <form action="" method="post">
+                      <div class="md:flex items-center mt-12">
+                          <div class="w-full md:w-1/2 flex flex-col">
+                              <label class="font-semibold leading-none">Name</label>
+                              <input type="text" class="leading-none text-gray-900 p-3 focus:outline-none focus:border-blue-700 mt-4 bg-gray-100 border rounded border-gray-200" />
+                          </div>
+                          <div class="w-full md:w-1/2 flex flex-col md:ml-6 md:mt-0 mt-4">
+                              <label class="font-semibold leading-none">Phone</label>
+                              <input type="email" class="leading-none text-gray-900 p-3 focus:outline-none focus:border-blue-700 mt-4 bg-gray-100 border rounded border-gray-200"/>
+                          </div>
+                      </div>
+                      <div class="md:flex items-center mt-8">
+                          <div class="w-full flex flex-col">
+                              <label class="font-semibold leading-none">Subject</label>
+                              <input type="text" class="leading-none text-gray-900 p-3 focus:outline-none focus:border-blue-700 mt-4 bg-gray-100 border rounded border-gray-200"/>
+                          </div>
+                          
+                      </div>
+                      <div>
+                          <div class="w-full flex flex-col mt-8">
+                              <label class="font-semibold leading-none">Message</label>
+                              <textarea type="text" class="h-40 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-blue-700 mt-4 bg-gray-100 border rounded border-gray-200"></textarea>
+                          </div>
+                      </div>
+                      <div class="flex items-center justify-center w-full">
+                          <button class="mt-9 font-semibold leading-none text-white py-4 px-10 bg-blue-700 rounded hover:bg-blue-600 focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 focus:outline-none">
+                              Send message
+                          </button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+    <footer class="w-full flex items-center justify-center h-20" style="background-color: #A8DADC;" >
+        <p>Juandiewe© Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

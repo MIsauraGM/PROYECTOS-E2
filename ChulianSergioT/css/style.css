@@ -1,0 +1,27 @@
+/* Fuentes */
+@font-face {
+  font-family: Pattaya;
+  src: url(../fonts/Pattaya-Regular.ttf);
+}
+
+.pattaya {
+  font-family: Pattaya, sans-serif;
+}
+
+
+
+/*Seccion proyectos */
+.proj {
+  background-color: #C52283;
+  margin: 2% 4%;
+}
+
+.resumen-proj{
+  color: #C52283;
+}
+
+
+
+.proj:hover {
+  background-color: #1B0024;
+}

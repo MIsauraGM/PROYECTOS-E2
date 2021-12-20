@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/indormacion.css">
+</head>
+<body>
+    <header>
+        <h2 id="title">INFORMACIÑON PERSONAL</h2>
+    </header>
+    <nav id="navdiv">
+        <div id="navarriba" class="navham"></div>
+        <div id="navcentro" class="navham"></div>
+        <div id="navabajo"  class="navham"></div>
+    </nav>
+    <main>
+        <section>
+            
+            <article>
+                <div id="movilAR">
+                    <div id="flash"></div>
+                    <div id="camara"></div>
+                </div>
+                <iframe src="iframe.html" frameborder="0px"></iframe >
+                <div id="movilAB">
+                    <div id="botonmenu"></div>
+                </div>
+            </article>
+            
+        </section>
+    </main>
+    <footer>
+        <div id="pie" align="center">
+            Formulario de contacto 
+        </div>
+        <form action="" method="get" accept-charset="utf-8" id="formulario">
+            <label for="nombre" id="nombrela">Nombre</label>
+            <input type="text" name="nombre" id="nombre"  placeholder="Nombre" required maxlength="25"/>
+
+            <label for="apellidos" id="apellidosla">Apellidos</label>
+            <input type="text" name="apellidos" id="apellido"  placeholder="Apellidos" required maxlength="25"/>
+
+            <label for="email" id="emailla">E-mail</label>
+            <input type="email" name="email" id="email"  placeholder="E-mail" required pattern="^\w+@\w+\.\w+$"/>
+
+            <label for="mensaje">mensaje</label>
+            <textarea name="mensaje" id="mensaje" required></textarea>
+
+            
+            <input type="submit" name="" id="enviar" value="enviar" />
+
+            <div id="error"></div>
+        </form>
+    </footer>
+</body>
+
+<script src="../js/menu2.js"></script>
+    <script src="../js/form.js"></script>
+</html>

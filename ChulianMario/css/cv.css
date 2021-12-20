@@ -1,0 +1,202 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    background-color: #03A688;
+}
+
+#title {
+    font-size: 6vw;
+    color: whitesmoke;
+}
+
+#cabecera {
+    display: flex;
+    background-color: #212E36 ;
+    width: 90vw;
+    height: 15vh;
+    margin: 5%;
+    align-items: center;
+    justify-content:start;
+    border:solid #064035  2px;
+}
+
+#foto {
+    border:solid #064035  2px;
+    margin: 5%;
+    background-color: whitesmoke;
+    width: 8vw;
+    height: 10vh;
+}
+
+#des {
+    color: whitesmoke;
+}
+
+#apartado1 {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 4%;
+    height: 55vh;
+    
+    
+}
+
+#izquierda1 {
+   
+    width: 40vw;
+    height: 27vh;
+    margin: 1%;
+
+}
+
+li {
+    background-color: #212E36;
+    width: 40vw;
+    height: 4vh;
+    margin-top: 2vh; 
+    border:solid #064035  0.5vw;
+}
+
+.barra {
+    background-color: #212E36;
+    width: 40vw;
+    height: 0.5vh;
+}
+
+#derecha1 {
+    
+    width: 40vw;
+    height: 4vh;
+    margin: 1%;
+    height: 53vh;
+}
+
+.caja {
+    background-color: #212E36;
+    width: 40vw;
+    height: 10vh;
+    margin-top: 2vh;
+    border:solid #064035  0.5vw;
+}
+
+h2 {
+    margin-top: 1vh;
+    color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    width: 2.5vw;
+    height: 2.5vw;
+    
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#arriba, #centro, #abajo {
+    
+    background-color: black;
+    width: 2.5vw;
+    height: 0.5vw;
+}
+
+
+nav{
+    width: 10000px;
+    top: 2vw;
+    left: 2vw;
+    
+    position: fixed;
+}
+.navham {
+    margin-top: 1vh;
+    background-color: rgba(3,166,136,1);
+    width: 4vw;
+    height: 1vh;
+    transition: ease 1s;
+}
+
+.divvisible {
+    position: fixed;
+    top: 23vh;
+    display: flex;
+    
+    height: 0vh;
+    align-items: center;
+}
+
+.enlacevisible {
+    padding: 2%;
+    background-color: rgba(3,166,136,1);
+    transition: ease 5s;
+    opacity: 0;
+    margin: 0% 2%;
+
+
+}
+
+#formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+label {
+    margin-left: 2%;
+    border: solid 1px black;
+    width: 5vw;
+}
+
+label, input {
+    margin-top: 5%;
+}
+
+
+
+footer {
+    height: 30vh;
+    background-color: #A4A9AD;
+}
+
+
+#nombre {
+    width: 20vw;
+}
+
+#pie { margin-top: 5%;}
+
+#nombrela {
+    width: 7vw;
+    border: solid 1px black;
+    align-items: center;
+    justify-content: center;
+}
+
+#apellidosla {
+    width: 10vw;
+    border: solid 1px black;
+}
+
+#emailla {
+    width: 7vw;
+    border: solid 1px black;
+    align-items: center;
+    justify-content: center;
+}

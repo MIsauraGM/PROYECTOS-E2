@@ -1,0 +1,11 @@
+
+/*-Cuerpo-*/
+#cuerpo-contprin {
+    height: 90%;/*Solo puedo ponerlo a 80*/
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(10,70px);/*No se puede poner los 70px*/
+    background-image:url(img/fondoPrincipal.jpg);/*Solo sale gradiente en tailwindcss*/
+    background-size: 100% 100%;/*No se puede poner al 100%*/
+}
+

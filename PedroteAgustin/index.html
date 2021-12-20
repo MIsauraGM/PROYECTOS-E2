@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript/validacion.js" defer></script>
+  <script src="javascript/hamburguesa.js" defer></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <section class="container" id="cont-header">
+      <div class="nombre">
+        <a href="index.html">PORTAFOLIO</a>
+      </div>
+      <nav class="menu" id="panelNav">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre mi</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </section>
+  </header>
+  <main id="main">
+    <a id="titulo-burguer" href="index.html">PORTAFOLIO</a>
+    <div id="hamburguesa">
+      <ul>
+        <li id="barraTop" class="barra"></li>
+        <li id="barraMid" class="barra"></li>
+        <li id="barraBottom" class="barra"></li>
+      </ul>
+    </div>
+  </main>
+  <section id="inicio" class="home">
+    <div class="container-image">
+      <img id="img-inicio" src="assets/inicio.jpg" alt="inicio">
+    </div>
+  </section>
+  <section id="sobre" class="about espaciado">
+    <article>
+      <aside class="sobre-nombre">
+        <h1 class="logo">Agustín Pedrote Bejarano</h1>
+        <h5 class="titulo">Desarrollador web</h5>
+      </aside>
+      <div id="txt-sobre">
+        <p>Soy Agustín, estudié desarrollo de aplicaciones web y soy inquieto por naturaleza.
+          Me encanta aprender cosas nuevas y sumarme a cualquier proyecto interesante
+          en el que pueda ayudar. También tengo un perro gigante, toco la guitarra y
+          soy de esos tipos que prefieren un libro de papel al Kindle.</p>
+      </div>
+      <div class="timeline">
+        <div class="container-time left">
+          <div class="content">
+            <h2>2022</h2>
+            <p>Desarrollo de Aplicaciones Web.</p>
+          </div>
+        </div>
+        <div class="container-time right">
+          <div class="content">
+            <h2>2011</h2>
+            <p>Diplomatura en Relaciones Laborales.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div>
+        <img src="assets/miFoto.jpg" alt="Agustín" id="miFoto">
+      </div>
+      <div class="centrado">
+        <a href="assets/CV.pdf" class="boton" target="_blank">DESCARGA MI CV</a>
+      </div>
+    </article>
+  </section>
+  <section id="proyectos" class="projects espaciado">
+    <div class="container">
+      <h2 class="section-title">Mis Proyectos</h2>
+      <a href="https://github.com/ies-donana-daw/temporizador-pomodoro-antonio-fernando-agu" target="_blank"
+        class="portafolio">
+        <img src="assets/proyecto1.jpg" alt="Pomodoro">
+        <aside class="portafolio-info">
+          <div>
+            <h3>Proyecto Pomodoro</h3>
+            <p>
+              La técnica Pomodoro es un método para mejorar la administración del tiempo dedicado
+              a una actividad.​ Se basa en usar un temporizador para dividir el tiempo en intervalos
+              fijos, llamados pomodoros, normalmente, 25 minutos de actividad, seguidos de 5 minutos
+              de descanso, con pausas más largas cada cuatro pomodoros.
+            </p>
+          </div>
+        </aside>
+      </a>
+      <a href="https://github.com/IES-Donana/guia-de-estilo-en-html-agucadiz" target="_blank" class="portafolio">
+        <img src="assets/proyecto2.jpg" alt="Guía de estilo">
+        <aside class="portafolio-info">
+          <div>
+            <h3>Guía de estilo</h3>
+            <p>
+              Lee la guía de estilos para CSS propuesta por Google y detecta y corrige los errores de estilo en el
+              código CSS del fichero css-no-valido.html
+            </p>
+          </div>
+        </aside>
+      </a>
+      <a href="https://github.com/IES-Donana/hojas-de-estilo-i---pseudo-clases-y-pseudo-elementos-agucadiz"
+        target="_blank" class="portafolio">
+        <img src="assets/proyecto3.jpg" alt="Pseudo clases y Pseudo elementos">
+        <aside class="portafolio-info">
+          <div>
+            <h3>Pseudo clases y Pseudo elementos</h3>
+            <p>
+              Haciendo uso de selectores de elementos (no se puede incluir clases o id en el
+              código HTML), aplica en el fichero pseudo-clases-I.html las psuedoclases necesarias
+              para obtener el resultado que se pide dentro del código.
+            </p>
+          </div>
+        </aside>
+      </a>
+      <a href="https://github.com/IES-Donana/html5-agucadiz" target="_blank" class="portafolio">
+        <img src="assets/proyecto4.jpg" alt="HTML 5">
+        <aside class="portafolio-info">
+          <div>
+            <h3>Proyecto Html 5</h3>
+            <p>
+              El código del fichero estructura_html.html está en HTML haciendo uso de elementos
+              div para estructurarla. Crea un nuevo fichero llamado estructura_html5.html y realiza
+              los cambios oportunos para que esté escrito en HTML5.
+            </p>
+          </div>
+        </aside>
+      </a>
+      <a href="https://github.com/IES-Donana/selectores-css-agucadiz" target="_blank" class="portafolio">
+        <img src="assets/proyecto5.jpg" alt="Selectores CSS">
+        <aside class="portafolio-info">
+          <div>
+            <h3>Selectores CSS</h3>
+            <p>
+              Analiza el código del fichero especifidad-selector.html y, sin previsualizarlo en el
+              navegador, trata de averiguar mentalmente qué estilos se aplicarán.</p>
+          </div>
+        </aside>
+      </a>
+      <a href="https://github.com/IES-Donana/proyecto-diw---dwecl-agucadiz" target="_blank" class="portafolio">
+        <img src="assets/proyecto6.jpg" alt="Portafolio">
+        <aside class="portafolio-info">
+          <div>
+            <h3>Portafolio</h3>
+            <p>
+              Este proyecto es una colección de documentos del trabajo del estudiante que exhibe su esfuerzo,
+              progreso y logros. El portafolio es una forma de evaluación que permite monitorear el proceso de
+              aprendizaje por el profesor y por el mismo estudiante, permite ir introduciendo cambios durante dicho
+              proceso.
+            </p>
+          </div>
+        </aside>
+      </a>
+    </div>
+  </section>
+  <section id="testimonios" class="testimonials espaciado">
+    <h2 class="section-title">Mis Testimonios</h2>
+    <section class="container-test">
+      <div class="cliente">
+        <div class="cliente-nom">
+          <p><b>María Santos López</b></p>
+        </div>
+        <div class="cliente-com caja-coment">
+          <p>
+            Un servicio profesional totalmente recomendado, tanto si tienes que hacer una web con
+            él como si necesitas asistencia técnica. Llevamos trabajando con él desde hace tiempo y
+            la verdad es que estamos encantados con los resultados. Es experto en SEO, diseño, programación
+            y hosting. Siempre te ofrece soluciones para cualquier problema que se plantee. ¡Así da gusto!
+          </p>
+        </div>
+      </div>
+      <div class="cliente-video"></div>
+    </section>
+
+    <section class="container-test">
+      <div class="cliente">
+        <div class="cliente-nom">
+          <p><b>Carlos Doral Pascual</b></p>
+        </div>
+        <div class="cliente-com caja-coment">
+          <p>
+            Si hay algo que destacar de Agustín es su entrega hacia el trabajo y su creatividad,
+            nos ha dado soluciones a todos los problemas técnicos que hemos encontrado y tiene unas ideas
+            fabulosas en cuanto a diseño y estética. Se lo recomiendo a cualquier empresa que necesite un
+            profesional experimentado. Profesional y serio.
+          </p>
+        </div>
+      </div>
+      <div class="cliente-video"></div>
+    </section>
+  </section>
+  <section id="contacto" class="contact espaciado">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+
+      <section class="todas-redes">
+        <article class="redes" id="tlf">
+          <a href="tel:617537876"><img src="assets/contact-phone.png" alt="Teléfono" class="img-contact"></a>
+          <h5 class="nom-icono"><a href="tel:617537876">617537876</a></h5>
+        </article>
+        <article class="redes" id="mail">
+          <a href="mailto:agustin.pedrote@iesdonana.org"><img src="assets/contact-email.png" alt="Email"
+              class="img-contact"></a>
+          <h5 class="nom-icono"><a href="mailto:agustin.pedrote@iesdonana.org">agustin.pedrote@iesdonana.org</a></h5>
+        </article>
+
+        <article class="redes">
+          <a href="https://youtube.com" target="_blank"><img src="assets/youtube.png" alt="YouTube"
+              class="img-contact"></a>
+          <a href="https://twitter.com" target="_blank"><img src="assets/twitter.png" alt="Twitter"
+              class="img-contact"></a>
+          <a href="https://github.com" target="_blank"><img src="assets/github.png" alt="Github"
+              class="img-contact"></a>
+          <a href="https://www.linkedin.com" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn"
+              class="img-contact"></a>
+          <a href="https://instagram.com" target="_blank"><img src="assets/instagram.png" alt="Instagram"
+              class="img-contact"></a>
+        </article>
+      </section>
+
+      <form id="form" class="formulario caja">
+        <input id="nombre" type="text" name="nombre" minlength="3" maxlength="50" placeholder="Ingresa tu nombre *"
+          title="Nombre sólo acepta letras y espacios en blanco" pattern="^((\s?[a-zA-ZáéíóúÁÉÍÓÚñÑ]+){1,2}){1,2}"
+          required>
+        <input id="apellidos" type="text" name="apellidos" pminlength="3" maxlength="50"
+          laceholder="Ingresa tus apellidos *" title="Apellidos sólo acepta letras y espacios en blanco"
+          pattern="^((\s?[a-zA-ZáéíóúÁÉÍÓÚñÑ]+){1,2}){1,2}" required>
+        <input id="email" type="email" name="email" placeholder="Ingresa tu correo *" title="Completa este campo"
+          pattern="^[a-z]+\d*[a-z@[a-z]+\.[a-z]{2,3}(\.[a-z]{2,3})?" required>
+        <textarea id="text" name="comments" cols="50" rows="10" placeholder="Déjame tus comentarios *"
+          required></textarea>
+        <input id="enviar" class="boton form-btn" type="submit" value="ENVIAR MENSAJE">
+      </form>
+    </div>
+
+  </section>
+  <footer class="footer">
+    <small>Sitio diseñado por Agustín Pedrote Bejarano</small>
+  </footer>
+</body>
+
+</html>

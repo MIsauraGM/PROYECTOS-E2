@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+  <header class="bg-gray-900 p-9 font-bold" >
+    <section class="text-pink-700 flex flex-row flex space-x-20 justify-center">
+      <div  class="text-4xl mr-48" px-8>
+        <a href="index.html">PORTAFOLIO</a>
+      </div>
+      <nav class="text-2xl flex space-x-7 px-8">
+        <a href="index.html " class="hover:text-white transform hover:scale-110">Inicio</a>
+        <a href="index.html" class="hover:text-white transform hover:scale-110">Sobre mi</a>
+        <a href="index.html" class="hover:text-white transform hover:scale-110">Proyectos</a>
+        <a href="index.html" class="hover:text-white transform hover:scale-110">Testimonios</a>
+        <a href="index.html" class="hover:text-white transform hover:scale-110">Contacto</a>
+      </nav>
+    </section>
+  </header>
+
+  <section>
+    <div class="">
+      <img src="assets/inicio.jpg" alt="inicio" class="object-contain h-100 w-full">
+    </div>
+  </section>
+
+<!-- component -->
+<div class="container bg-white mx-auto w-full h-full">
+  <div class="relative wrap overflow-hidden p-10 h-full">
+    <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+    <!-- right timeline -->
+    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+      <div class="order-1 w-5/12"></div>
+      <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+        <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+      </div>
+      <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+        <h3 class="mb-3 font-bold text-gray-800 text-xl">2022 - Grado Superior de Desarrollo de Aplicaciones Web</h3>
+        <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">El desarrollo web de aplicaciones web 
+          es aquel que permite crear estas herramientas a las que los usuarios podemos acceder a través de Internet o una intranet. 
+          Allí obtendremos información o podremos interactuar con elementos que nos permitan la comunicación entre nosotros, los usuarios, y la web.</p>
+      </div>
+    </div>
+
+    <!-- left timeline -->
+    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+      <div class="order-1 w-5/12"></div>
+      <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+        <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+      </div>
+      <div class="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+        <h3 class="mb-3 font-bold text-white text-xl">2010 Diplomatura en Relaciones Laborales</h3>
+        <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Las relaciones laborales son 
+          aquellas que se establecen entre tres elementos esenciales: por un lado, el trabajo; por otro, el salario, 
+          sueldo o capital y, finalmente, el proceso productivo.</p>
+      </div>
+    </div>
+    
+    <!-- right timeline -->
+    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+      <div class="order-1 w-5/12"></div>
+      <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+        <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+      </div>
+      <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+        <h3 class="mb-3 font-bold text-gray-800 text-xl">2010 - Curso Aplicaciones Informáticas de Gestión</h3>
+        <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Se trata de programas informáticos en los que se 
+          integran todos los procesos e informaciones de una empresa. De esta forma, todas las funciones de un negocio se automatizan, 
+          quedando integradas en un sistema que tiene una única base de datos</p>
+      </div>
+    </div>
+
+    <!-- left timeline -->
+    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+      <div class="order-1 w-5/12"></div>
+      <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+        <h1 class="mx-auto text-white font-semibold text-lg">4</h1>
+      </div>
+      <div class="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+        <h3 class="mb-3 font-bold text-white text-xl">2005 - Bachillerato de Humanidades y Ciencias Sociales</h3>
+        <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Las Ciencias Sociales y Humanidades se 
+          encargan del estudio del ser humano como ente social, dando gran énfasis a aspectos como el comportamiento, interacciones 
+          humanas y la cultura.</p>
+      </div>
+    </div>
+  </div>
+</div>  
+
+  <!-- component -->
+<!-- Create by joker banny -->
+<div class="h-screen bg-indigo-50 flex justify-center items-center">
+	<div class="lg:w-2/5 md:w-1/2 w-2/3">
+		<form class="bg-white p-10 rounded-lg shadow-lg min-w-full">
+			<h1 class="text-center text-2xl mb-6 text-gray-600 font-bold font-sans">Contacto</h1>
+			<div>
+				<label class="text-gray-800 font-semibold block my-3 text-md" for="username">Nombre</label>
+				<input class="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none" type="text" name="username" id="username" placeholder="username" />
+      </div>
+				<div>
+					<label class="text-gray-800 font-semibold block my-3 text-md" for="email">Email</label>
+					<input class="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none" type="text" name="email" id="email" placeholder="@email" />
+      </div>
+					<div>
+						<label class="text-gray-800 font-semibold block my-3 text-md" for="password">Password</label>
+						<input class="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none" type="text" name="password" id="password" placeholder="password" />
+      </div>
+						<div>
+							<label class="text-gray-800 font-semibold block my-3 text-md" for="confirm">Confirm password</label>
+							<input class="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none" type="text" name="confirm" id="confirm" placeholder="confirm password" />
+      </div>
+							<button type="submit" class="w-full mt-6 bg-indigo-600 rounded-lg px-4 py-2 text-lg text-white tracking-wide font-semibold font-sans">Register</button>
+							<button type="submit" class="w-full mt-6 mb-3 bg-indigo-100 rounded-lg px-4 py-2 text-lg text-gray-800 tracking-wide font-semibold font-sans">Login</button>
+		</form>
+	</div>
+</div>
+
+  <footer class="bg-purple-900 text-white text-center p-1 text-lg">
+    <small>Sitio diseñado por Agustín Pedrote Bejarano</small>
+  </footer>
+
+</body>
+
+</html>

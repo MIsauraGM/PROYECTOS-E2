@@ -1,0 +1,168 @@
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    background-color: #03A688;
+}
+
+#title {
+    font-size: 6vw;
+    color: whitesmoke;
+}
+
+body  {
+    overflow-x: hidden;
+    
+}
+
+.cajaimpar {
+    display: flex;
+    width: 100vw;
+    background-color: #212E36;
+    justify-content: space-around;
+    height: 20vh;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 3vw;
+}
+
+.cajapar {
+    display: flex;
+    width: 100vw;
+    background-color: rgb(0, 0, 0); 
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    height: 20vh;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 3vw;
+}
+
+
+
+#testimonios {
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    background-color: black;
+}
+
+#testimoniosmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   
+    width: 30vw;
+    height: inherit;
+    margin:0% 1%;
+}
+
+#testimoniosvideos {
+    width: 68vw;
+    height: inherit;
+    background-color: #212E36;
+    margin:0% 1%;
+}
+
+.menucaja {
+    background-color: #212E36;
+    width: inherit;
+    height: 5vh;
+}
+
+.carrusel {
+    width: 25vw;
+    height: 18vh;
+    background-color: aliceblue;
+}
+
+#formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+label {
+    margin-left: 2%;
+    border: solid 1px black;
+    width: 5vw;
+}
+
+label, input {
+    margin-top: 5%;
+}
+
+
+
+footer {
+    height: 30vh;
+    background-color: #A4A9AD;
+}
+
+
+#nombre {
+    width: 20vw;
+}
+
+#nombrela {
+    width: 7vw;
+    border: solid 1px black;
+    align-items: center;
+    justify-content: center;
+}
+
+#apellidosla {
+    width: 10vw;
+    border: solid 1px black;
+}
+
+#emailla {
+    width: 7vw;
+    border: solid 1px black;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+nav{
+    width: 10000px;
+    top: 2vw;
+    left: 2vw;
+    
+    position: fixed;
+}
+.navham {
+    margin-top: 1vh;
+    background-color: rgba(3,166,136,1);
+    width: 4vw;
+    height: 1vh;
+    transition: ease 1s;
+}
+
+.divvisible {
+    position: fixed;
+    top: 23vh;
+    display: flex;
+    
+    height: 0vh;
+    align-items: center;
+}
+
+.enlacevisible {
+    padding: 2%;
+    background-color: rgba(3,166,136,1);
+    transition: ease 5s;
+    opacity: 0;
+    margin: 0% 2%;
+
+
+}

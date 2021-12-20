@@ -1,0 +1,192 @@
+body {
+    background-color: #A4A9AD;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    background-color: #03A688;
+}
+
+#title {
+    font-size: 6vw;
+    color: whitesmoke;
+}
+
+#movilAR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 5vh;
+}
+#movilAB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 5vh;
+    
+}
+
+section {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+article{
+    background-color: black;
+    border-left: solid 1vw;
+    border-top: solid 1vh;
+    border-right: solid 1vw;
+    border-bottom: solid 1vh;
+    border-radius: 15px;
+   
+    
+}
+
+iframe {
+
+width: 30vw;
+height: 85vh;
+
+}
+
+#flash {
+    margin: 2%;
+    background-color: white;
+    height: 1vw;
+    width: 1vw;
+    border-radius: 110%;
+}
+
+#camara {
+    margin: 2%;
+    width: 5vw;
+    height: 1vh;
+    background-color: white;
+}
+
+#botonmenu {
+    background-color: white;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 100%;
+}
+
+nav {
+    display: flex;
+    width: 2.5vw;
+    height: 2.5vw;
+    
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#arriba, #centro, #abajo {
+    
+    background-color: black;
+    width: 2.5vw;
+    height: 0.5vw;
+}
+
+
+nav{
+    width: 10000px;
+    top: 2vw;
+    left: 2vw;
+    
+    position: fixed;
+}
+.navham {
+    margin-top: 1vh;
+    background-color: rgba(3,166,136,1);
+    width: 4vw;
+    height: 1vh;
+    transition: ease 1s;
+}
+
+.divvisible {
+    position: fixed;
+    top: 23vh;
+    display: flex;
+    
+    height: 0vh;
+    align-items: center;
+}
+
+.enlacevisible {
+    padding: 2%;
+    background-color: rgba(3,166,136,1);
+    transition: ease 5s;
+    opacity: 0;
+    margin: 0% 2%;
+
+
+}
+
+#formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+label {
+    margin-left: 2%;
+    border: solid 1px black;
+    width: 5vw;
+}
+
+label, input {
+    margin-top: 5%;
+}
+
+
+
+footer {
+    height: 30vh;
+    background-color: #A4A9AD;
+}
+
+
+#nombre {
+    width: 20vw;
+}
+
+#pie { margin-top: 5%;}
+
+#nombrela {
+    width: 7vw;
+    border: solid 1px black;
+    align-items: center;
+    justify-content: center;
+}
+
+#apellidosla {
+    width: 10vw;
+    border: solid 1px black;
+}
+
+#emailla {
+    width: 7vw;
+    border: solid 1px black;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    iframe {
+      width: 100vw;
+      height: 100vh;
+    }
+  }

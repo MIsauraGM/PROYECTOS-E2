@@ -1,0 +1,284 @@
+body {
+    background-image: url(../images/fondowasa.jpg);
+    background-size: 50vh;
+    font-size: 15px;
+    
+   
+}
+
+body::-webkit-scrollbar {
+    width: 0px; 
+}
+
+header {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    height: 5vh;
+    background-color: #212E36;
+    background-size: 50vh;
+    position: fixed;
+    top: 0vh;
+}
+
+#perfil {
+ 
+    padding: 3%;
+    background: #03A688;
+    clip-path: circle(50% at 50% 50%);
+}
+
+#nombre {
+    width: 70vw;
+    color: whitesmoke;
+}
+
+#videollamada{
+    display: flex;
+    
+}
+
+#videocuerpo {
+    height: 5vw;
+    width: 5vw;
+    background-color: #A4A9AD;
+}
+
+#lentecabecera {
+    background-color: #A4A9AD;
+    height: 5vw;
+    width: 3vw;
+    clip-path: polygon(28% 28%, 100% 0%, 100% 100%, 30% 79%, 16% 51%);
+}
+
+#llamada {
+    background-color: #A4A9AD;
+    height: 7vw;
+    width: 7vw;
+    clip-path: polygon(48% 12%, 43% 7%, 34% 5%, 26% 9%, 24% 17%, 24% 22%, 25% 28%, 28% 32%, 33% 39%, 37% 46%, 41% 53%, 48% 61%, 53% 67%, 58% 73%, 65% 80%, 71% 86%, 77% 89%, 86% 91%, 93% 87%, 98% 82%, 99% 72%, 95% 66%, 88% 60%, 79% 61%, 74% 64%, 68% 65%, 62% 60%, 57% 54%, 53% 46%, 46% 39%, 46% 29%, 50% 24%, 54% 19%);
+}
+
+#cabecera {
+    height: 5vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.jefe {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex: 100%;
+}
+
+.yo {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    flex: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.chatjefe {
+    color: whitesmoke;
+    margin-top: 2%;
+    
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    padding: 2%;
+    max-width: 75%;
+    background-color: #212E36;
+}
+
+.chatyo {
+    color: whitesmoke;
+    margin-top: 2%;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    padding: 2%;
+   
+    max-width: 75%;
+    background-color: #064035;
+}
+
+/* footer {
+    justify-content: center;
+    left: 5%;
+    width: 90vw;
+    padding: 2%;
+    background-color: violet;
+    position: fixed;
+    top: 90vh;
+    
+} */
+
+footer {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    padding: 1%;
+    background-image: url(../images/fondowasa.jpg);
+    background-size: 50vh;
+    position: fixed;
+    bottom: 0vh;
+    
+}
+
+#emoticono {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+width: 5vw;
+height: 5vw;
+border-radius: 100%;
+background-color: #A4A9AD;
+}
+
+#teclado {
+    display: flex;
+    
+    width: 90vw;
+    height: 7vw;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: #212E36;
+}
+
+
+
+#texto {
+    width: 68vw;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: none;
+    background-color: #212E36;
+}
+
+#ojos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ojo {
+    margin-left: 0.3vw;
+    margin-right: 0.3vw;
+    width: 1vw;
+    height: 1vw;
+    background-color: #212E36;
+    border-radius: 100px;
+}
+
+#boca {
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 0.5vw;
+    width: 2vw;
+    height: 1vw;
+    background-color: #212E36;
+    border-bottom-left-radius:500% ;
+    border-bottom-right-radius:500%
+}
+
+#diente {
+   
+    margin-top: 0.3vw;
+    width: 1vw;
+    height: 0.5vw;
+    background-color: #A4A9AD;
+    border-bottom-left-radius:500% ;
+    border-bottom-right-radius:500%
+}
+
+.bocadilloyo {
+    width: 2vw;
+    height: 2vh;
+    margin-top: 2%;
+    
+    padding: 2%;
+    margin-right: 1%;
+    clip-path: polygon(0 50%, 0 0, 50% 0);
+    background-color: #064035;
+}
+
+.bocadillojefe {
+    width: 2vw;
+    height: 2vh;
+    margin-top: 2%;
+    padding: 2%;
+    margin-left: 1%;
+    clip-path: polygon(100% 50%, 100% 0%, 10% 0);
+    background-color: #212E36;
+}
+
+#camara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A4A9AD;
+    width: 5vw;
+    height: 5vw;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 15% 85%, 0% 85%);
+
+}
+
+#lente {
+    width: 3vw;
+    height: 3vw;
+    clip-path: circle(50% at 50% 50%);
+    margin-bottom: 0.3vw;
+    background: rgb(164,169,173);
+    background: radial-gradient(circle, rgba(164,169,173,1) 0%, rgba(164,169,173,1) 47%, rgba(33,46,54,1) 49%);
+
+}
+
+#clip {
+    width: 4vw;
+    height: 4.5vw;
+    background-color: #A4A9AD;
+    clip-path: polygon(55% 11%, 64% 17%, 71% 18%, 75% 19%, 83% 20%, 91% 28%, 97% 37%, 99% 46%, 99% 63%, 99% 66%, 100% 69%, 100% 71%, 99% 75%, 94% 81%, 89% 88%, 77% 91%, 65% 92%, 54% 92%, 44% 91%, 35% 89%, 24% 85%, 16% 81%, 9% 73%, 6% 68%, 3% 53%, 1% 39%, 13% 19%, 31% 17%, 48% 23%, 65% 33%, 81% 52%, 64% 74%, 34% 56%, 24% 39%, 51% 59%, 64% 50%, 29% 27%, 15% 34%, 15% 55%, 26% 70%, 33% 76%, 42% 80%, 51% 83%, 63% 84%, 71% 82%, 75% 76%, 85% 65%, 89% 53%, 85% 38%, 75% 30%, 52% 19%, 42% 13%, 43% 6%, 49% 8%);
+}
+
+#audio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #03A688;
+    width: 7vw;
+    height: 7vw;
+    clip-path: circle(50% at 50% 50%);
+}
+
+#micro {
+    margin-top: 0.5vw;
+    width: 3.5vw;
+    height: 4vw;
+    background-color: whitesmoke;
+    clip-path: ellipse(25% 50% at 50% 50%);
+}
+
+#eclipsemicro {
+    width: 4vw;
+    height: 4vw;
+    margin-top: -3vw;
+    background-color: whitesmoke;
+    clip-path: polygon(50% 89%, 84% 76%, 100% 36%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0 36%, 15% 77%);
+}
+
+#piemicro {
+    width: 0.5vw;
+    height: 1vw;
+    background-color: whitesmoke;
+}
